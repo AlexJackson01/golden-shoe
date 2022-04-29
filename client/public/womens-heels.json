@@ -1,18 +1,111 @@
 [{
-    "product": "Black Patent Strappy Stiletto Heel Sandals",
-    "price": "£29.99",
-    "colours": [
-        { "name": "black", "hex": "#ffffff", "inStock": true, "images": ["images/black-patent-1.jpg", "images/black-patent-2.jpg", "images/black-patent-3.jpg", "images/black-patent-4.jpg"] },
-        { "name": "pink", "hex": "#d15837", "inStock": false }
-    ],
-    "sizes": [
-        { "size": 3, "stock": 10 },
-        { "size": 4, "stock": 4 },
-        { "size": 5, "stock": 0 },
-        { "size": 6, "stock": 7 },
-        { "size": 7, "stock": 1 },
-        { "size": 8, "stock": 12 },
-        { "size": 9, "stock": 0 }
-    ],
-    "details": ["Patent finish", "Strappy design", "Open toe", "Ankle-strap fastening", "Stiletto heel", "Heel height: 4' / 10cm"]
-}]
+        "product": "Black Patent Strappy Stiletto Heel Sandals",
+        "price": "£29.99",
+        "colours": [
+            { "name": "black", "hex": "#000000", "inStock": true, "images": ["images/black-patent-1.jpg", "images/black-patent-2.jpg", "images/black-patent-3.jpg", "images/black-patent-4.jpg"] },
+            { "name": "pink", "hex": "#d15837", "inStock": false }
+        ],
+        "sizes": [
+            { "size": 3, "stock": 10 },
+            { "size": 4, "stock": 4 },
+            { "size": 5, "stock": 0 },
+            { "size": 6, "stock": 7 },
+            { "size": 7, "stock": 1 },
+            { "size": 8, "stock": 12 },
+            { "size": 9, "stock": 0 }
+        ],
+        "details": ["Patent finish", "Strappy design", "Open toe", "Ankle-strap fastening", "Stiletto heel", "Heel height: 4' / 10cm"]
+    },
+    {
+        "product": "Wide Fit Gold Metallic Stiletto Heel Court Shoes",
+        "price": "£25.99",
+        "colours": [
+            { "name": "gold", "hex": "gold", "inStock": true, "images": ["images/wide-fit-gold-1.jpg", "images/wide-fit-gold-2.jpg", "images/wide-fit-gold-3.jpg", "images/wide-fit-gold-4.jpg"] }
+        ],
+        "sizes": [
+            { "size": 3, "stock": 10 },
+            { "size": 4, "stock": 4 },
+            { "size": 5, "stock": 0 },
+            { "size": 6, "stock": 7 },
+            { "size": 7, "stock": 1 },
+            { "size": 8, "stock": 12 },
+            { "size": 9, "stock": 0 }
+        ],
+        "details": ["Wide fit (D fitting)", "Extra measure across the insole, joint and instep", "Metallic finish", "Pointed toe", "Slip-on design", "Stiletto heel", "Heel height: 3' / 8cm"]
+    },
+    {
+        "product": "Black Pointed Block Heel Court Shoes",
+        "price": "£29.99",
+        "colours": [
+            { "name": "black", "hex": "#000000", "inStock": true, "images": ["images/black-pointed-1.jpg", "images/black-pointed-2.jpg", "images/black-pointed-3.jpg", "images/black-pointed-4.jpg"] },
+            { "name": "camel", "hex": "#c19a6b", "inStock": true, "images": ["images/camel-pointed-1.jpg", "images/camel-pointed-2.jpg", "images/camel-pointed-3.jpg", "images/camel-pointed-4.jpg"] }
+        ],
+        "sizes": [
+            { "size": 3, "stock": 0 },
+            { "size": 4, "stock": 0 },
+            { "size": 5, "stock": 3 },
+            { "size": 6, "stock": 7 },
+            { "size": 7, "stock": 10 },
+            { "size": 8, "stock": 12 },
+            { "size": 9, "stock": 6 }
+        ],
+        "details": ["Leather-look finish", "2-part design", "Pointed toe", "Ankle-strap fastening", "Block heel", "Heel height: 3.5' / 8.8cm"]
+    },
+    {
+        "product": "Wide Fit Light Green 2 Part Espadrille Wedge Sandals",
+        "price": "£25.99",
+        "colours": [
+            { "name": "cream", "hex": "#ede3ce", "inStock": true, "images": [] },
+            { "name": "camel", "hex": "#c19a6b", "inStock": true, "images": [] },
+            { "name": "green", "hex": "#a6ab8d", "inStock": true, "images": [] }
+        ],
+        "sizes": [
+            { "size": 3, "stock": 0 },
+            { "size": 4, "stock": 0 },
+            { "size": 5, "stock": 3 },
+            { "size": 6, "stock": 7 },
+            { "size": 7, "stock": 10 },
+            { "size": 8, "stock": 12 },
+            { "size": 9, "stock": 6 }
+        ],
+        "details": ["Wide fit (D fitting)", "Extra measure across the insole, joint and instep", "Leather-look finish", "2-part design", "Open toe", "Ankle-strap fastening", "Espadrille wedge heel", "Heel height: 3' / 8cm"]
+    },
+    {
+        "product": "Brown Leopard Print Block Heel Sandals",
+        "price": "£27.99",
+        "colours": [
+            { "name": "animal", "hex": "animal", "inStock": true, "images": [] }
+        ],
+        "sizes": [
+            { "size": 3, "stock": 0 },
+            { "size": 4, "stock": 0 },
+            { "size": 5, "stock": 3 },
+            { "size": 6, "stock": 7 },
+            { "size": 7, "stock": 10 },
+            { "size": 8, "stock": 12 },
+            { "size": 9, "stock": 6 }
+        ],
+        "details": ["Soft suedette finish", "Leopard print", "2-part design", "Open toe", "Ankle-strap fastening", "Block heel", "Heel height: 3' / 8.3cm"]
+    },
+    {
+        "product": "White Open Toe Block Heel Sandals",
+        "price": "£27.99",
+        "colours": [
+            { "name": "white", "hex": "#ffffff", "inStock": true, "images": [] },
+            { "name": "black", "hex": "#000000", "inStock": true, "images": [] },
+            { "name": "cream", "hex": "#ede3ce", "inStock": false, "images": [] },
+            { "name": "camel", "hex": "#c19a6b", "inStock": true, "images": [] },
+            { "name": "pink", "hex": "#d15837", "inStock": false, "images": [] }
+        ],
+        "sizes": [
+            { "size": 3, "stock": 0 },
+            { "size": 4, "stock": 0 },
+            { "size": 5, "stock": 3 },
+            { "size": 6, "stock": 7 },
+            { "size": 7, "stock": 10 },
+            { "size": 8, "stock": 12 },
+            { "size": 9, "stock": 6 }
+        ],
+        "details": ["Leather-look finish", "2-part design", "Open toe", "Ankle-strap fastening", "Block heel", "Heel height: 3' / 8.3cm"]
+    }
+]
