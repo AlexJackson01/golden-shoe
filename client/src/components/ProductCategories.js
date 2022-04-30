@@ -11,12 +11,15 @@ export default function ProductCategories() {
   return (
     <div className='shoe-categories'>
         <h2>SHOES FOR ANY OCCASION</h2>
-        <img src={Sports} alt="Sports category" />
-        <img src={Evening} alt="Evening category" />
-        <img src={Work} alt="Work category" />
-        <img src={Casual} alt="Casual category" />
-        <img src={Holiday} alt="Holiday category" />
-        <img src={Home} alt="Home category" />
+        <div className='categories'>
+          <div><img src={Sports} className="category-image" alt="Sports category" /><p className='category-item'>Sports</p></div>
+          <div><img src={Evening} className="category-image" alt="Evening category" /><p className='category-item'>Evening</p></div>
+          <div><img src={Work} className="category-image" alt="Work category" /><p className='category-item'>Work</p></div>
+          <div><img src={Casual} className="category-image" alt="Casual category" /><p className='category-item'>Casual</p></div>
+          <div><img src={Holiday} className="category-image" alt="Holiday category" /><p className='category-item'>Holiday</p></div>
+          <div><img src={Home} className="category-image" alt="Home category" /><p className='category-item'>Home</p></div>
+
+    </div>
     </div>
   )
 }

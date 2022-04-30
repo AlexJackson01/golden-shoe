@@ -3,6 +3,9 @@ body {
     font-family: Montserrat;
 }
 
+
+/* NAVBAR STYLING */
+
 .nav-container {
     background-color: #963226;
     color: white;
@@ -40,6 +43,9 @@ a:hover {
 .navbar-toggler {
     background-color: white !important;
 }
+
+
+/* BANNER STYLING */
 
 .grid-container {
     background-color: #EDE8DD;
@@ -79,9 +85,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 760px) {
-    .men-menu {
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .mens h1 {
         color: white;
         background-color: rgba(0, 0, 0, 0.6);
         opacity: 1;
@@ -89,7 +93,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 760px) and (max-width: 960px) {
-    .men-menu {
+    .mens h1 {
         color: white;
         background-color: rgba(0, 0, 0, 0.6);
         opacity: 1;
@@ -122,9 +126,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 760px) {
-    .women-menu {
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .womens h1 {
         color: white;
         background-color: rgba(0, 0, 0, 0.6);
         opacity: 1;
@@ -132,7 +134,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 760px) and (max-width: 960px) {
-    .women-menu {
+    .womens h1 {
         color: white;
         background-color: rgba(0, 0, 0, 0.6);
         opacity: 1;
@@ -165,9 +167,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 760px) {
-    .uni-menu {
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .uni h1 {
         color: white;
         background-color: rgba(0, 0, 0, 0.6);
         opacity: 1;
@@ -175,7 +175,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 760px) and (max-width: 960px) {
-    .uni-menu {
+    .uni h1 {
         color: white;
         background-color: rgba(0, 0, 0, 0.6);
         opacity: 1;
@@ -197,12 +197,44 @@ a:hover {
     font-size: 30px;
 }
 
-.intro-video {
-    display: block;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 15px;
+
+/* CATEGORIES STYLING */
+
+.shoe-categories {
+    padding: 50px;
+    margin-top: 50px;
 }
+
+h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.categories img:hover {
+    transform: scale(1.2);
+    padding-bottom: 5px;
+}
+
+.category-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.category-item {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* FOOTER STYLING */
 
 .footer-container {
     background-color: #963226;
