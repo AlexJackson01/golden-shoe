@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from '../images/Golden Shoe Logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
   return (
@@ -13,8 +15,13 @@ export default function Navbar() {
             <div className="navbar-nav">
             <a className="nav-item nav-link active" href="/home">PRODUCTS</a>
             <a className="nav-item nav-link" href="/favourites">ABOUT</a>
-            <a className="nav-item nav-link" href="/contact">CONTACT</a>
-            ICONS HERE
+            <a className="nav-item nav-link contact-link" href="/contact">CONTACT</a>
+            <div className='nav-icons-container'>
+            <FontAwesomeIcon icon={faSearch} className="nav-icon" size="1.5x" />
+              <FontAwesomeIcon icon={faUser} className="nav-icon" size="1.5x" />
+              <FontAwesomeIcon icon={faCartShopping} className="nav-icon" size="1.5x" />
+            </div>
+
         </div>
         
   </div>

@@ -32,12 +32,22 @@ a:hover {
 
 .nav-logo {
     background-color: #963226;
-    height: 50px;
-    padding-left: 50px;
+    height: 55px;
+    padding-left: 30px;
 }
 
-.icons-nav {
-    text-align: right;
+.nav-icons-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.contact-link {
+    margin-right: 50px;
+}
+
+.nav-icon {
+    display: flex;
+    margin-right: 10px;
 }
 
 .navbar-toggler {
@@ -214,7 +224,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
 .categories img:hover {
@@ -239,4 +249,26 @@ h2 {
 .footer-container {
     background-color: #963226;
     color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-logo {
+    width: 200px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+h5 {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+li:hover {
+    text-decoration: underline;
 }

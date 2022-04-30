@@ -5,14 +5,14 @@ export default function Footer() {
   return (
     <div className='footer-container'>
         <div className='browse-list'>
-            <h3>Browse</h3>
+            <h5>Browse</h5>
             <ul>
                 <li>Men's</li>
                 <li>Women's</li>
                 <li>Unisex</li>
             </ul>
 
-            <h3>Categories</h3>
+            <h5>Categories</h5>
             <ul>
                 <li>Sports</li>
                 <li>Evening</li>
@@ -25,8 +25,8 @@ export default function Footer() {
         </div>
 
         <div className='info-list'>
-            <img src={Logo} alt="Golden Shoe Logo" />
-            <h3>Info</h3>
+            <img src={Logo} className="footer-logo" alt="Golden Shoe Logo" />
+            <h5>Info</h5>
             <ul>
                 <li>About</li>
                 <li>Careers at GS</li>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div className='help-list'>
-            <h3>Help</h3>
+            <h5>Help</h5>
             <ul>
                 <li>My Account</li>
                 <li>Delivery</li>
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         <div className='contact-list'>
-            <h3>Contact</h3>
+            <h5>Contact</h5>
             <ul>
                 <li>Customer Service</li>
                 <li>Live Chat</li>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../videos/GoldenBanner.mp4';
-
+import Fade from 'react-reveal/Fade';
 import Mens from '../images/Mens.png';
 import Womens from '../images/Womens.png';
 import Unisex from '../images/Unisex.png';
