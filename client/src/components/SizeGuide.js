@@ -7,7 +7,7 @@ export default function SizeGuide() {
 
         <p>Our shoe sizes are stocked from sizes 3-9. See how to measure for your size below.</p>
 
-        <div class="size-table">
+        <div className="size-table">
         <table>
           <thead>
             <tr>

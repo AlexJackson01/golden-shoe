@@ -1,5 +1,6 @@
 body {
     background-color: #EDE8DD;
+    font-family: Montserrat;
 }
 
 .nav-container {
@@ -7,10 +8,200 @@ body {
     color: white;
 }
 
+a {
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: #963226 !important;
+    padding-right: 20px;
+}
+
+.navbar-nav {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
 .nav-logo {
     background-color: #963226;
-    height: 150px;
+    height: 50px;
     padding-left: 50px;
+}
+
+.icons-nav {
+    text-align: right;
+}
+
+.navbar-toggler {
+    background-color: white !important;
+}
+
+.grid-container {
+    background-color: #EDE8DD;
+}
+
+.intro-video {
+    width: 100%;
+}
+
+.video-banner {
+    grid-area: header;
+}
+
+.mens {
+    grid-area: menu;
+    background-color: rgba(0, 0, 0);
+    background: url('./images/Mens.png');
+    background-size: cover;
+    padding: 50px;
+}
+
+.mens h1 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    opacity: 0;
+}
+
+.mens:hover {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 1;
+}
+
+.mens:hover h1 {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+    .men-menu {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+    .men-menu {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+    }
+}
+
+.womens {
+    grid-area: main;
+    background-color: rgba(0, 0, 0);
+    background: url('./images/Womens.png');
+    background-size: cover;
+    padding: 50px;
+}
+
+.womens h1 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    opacity: 0;
+}
+
+.womens:hover {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 1;
+}
+
+.womens:hover h1 {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+    .women-menu {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+    .women-menu {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+    }
+}
+
+.uni {
+    grid-area: right;
+    background-color: rgba(0, 0, 0);
+    background: url('./images/Unisex.png');
+    background-size: cover;
+    padding: 50px;
+}
+
+.uni h1 {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    opacity: 0;
+}
+
+.uni:hover {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    opacity: 1;
+}
+
+.uni:hover h1 {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 760px) {
+    .uni-menu {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+    .uni-menu {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 1;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header' 'menu menu main main right right';
+    gap: 10px;
+    background-color: #EDE8DD;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: #EDE8DD;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.intro-video {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .footer-container {

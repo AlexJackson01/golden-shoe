@@ -1,22 +1,17 @@
 import './App.css';
-import Nav from './components/Navbar.js';
-import VideoBanner from './components/VideoBanner';
-import ProductCategories from './components/ProductCategories';
-import Footer from './components/Footer';
-import Heels from './components/Heels';
-import SizeGuide from './components/SizeGuide';
-import Returns from './components/Returns';
+import { Route, Routes } from "react-router-dom";
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <VideoBanner />
-      <ProductCategories />
-      <Heels />
-      <SizeGuide />
-      <Returns />
-      <Footer />
+      <Navbar />
+      <Routes>
+        <Route path="*" element={<Home />} />
+      </Routes>
+
     </div>
   );
 }
