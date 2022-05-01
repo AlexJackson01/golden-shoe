@@ -3,11 +3,43 @@ import { Link } from "react-router-dom";
 
 
 
-export default function ProductInfo({product}) {
+export default function ProductInfo({product, setShoppingCart}) {
 
     const [stock, setStock] = useState("");
-    const [size, setSize] = useState(0);
+    const [size, setSize] = useState("");
     const [featuredPhoto, setFeaturedPhoto] = useState(product.colours[0].images[0]);
+    const [productToBuy, setProductToBuy] = useState([
+        {product_id: product.id, url: product.photo, price: product.price, product_name: product.product, colour: product.colours[0].name, size: size}
+    ])
+    const [cartNotice, setCartNotice] = useState("");
+
+    const addToBag = e => {
+            fetch("/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({product_id: product.id, url: product.photo, price: product.price, product_name: product.product, colour: product.colours[0].name, size: size})
+        })
+          .then(res => {
+            if (res.ok) {
+              //if the response is received correctly
+              return res.json(); //return the response as a javascript object (this is what .json() does)
+            } else {
+              throw new Error("Not 2xx response");
+            }
+          })
+          .then(json => {
+            // upon success, update tasks
+            setShoppingCart(json);
+            setCartNotice("Added to bag!");
+            console.log(json);
+          })
+          .catch(error => {
+            console.log(error);
+            // upon failure, show error message
+          });
+      };
 
   return (
       <div className='product-container container'>
@@ -62,9 +94,9 @@ export default function ProductInfo({product}) {
             <h6 className='size-link'>Delivery Info</h6>
             </div>
             </div>
-
-            {stock && stock < 5 && <h5 className='stock-notice'>Size {size}: Stock running low!</h5>}
-            {stock && stock >= 5 && <h5 className='stock-notice'>Size {size}: In stock!</h5>}
+            {size && <h5 className='size-notice'>Selected size: {size}</h5>}    
+            {stock && stock < 5 && <h5 className='stock-notice'>Stock running low!</h5>}
+            {stock && stock >= 5 && <h5 className='stock-notice'>In stock!</h5>}
 
 
 
@@ -73,8 +105,9 @@ export default function ProductInfo({product}) {
                 {size.stock === 0 ? (
                     <button className="grey-bag" disabled="true">Add to bag</button>
                 ) : 
-                <button className="red-bag">Add to bag</button>
+                <button className="red-bag" onClick={() => addToBag()}>Add to bag</button>
             }
+            {cartNotice && <h6 className='cart-notice'>{cartNotice}</h6>}
                 </div>
             
 

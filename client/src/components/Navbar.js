@@ -2,8 +2,10 @@ import React from 'react';
 import Logo from '../images/Golden Shoe Logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faUser, faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+
+export default function Navbar({shoppingCart}) {
   return (
     <div className='nav-container'>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,7 +21,7 @@ export default function Navbar() {
             <div className='nav-icons-container'>
             <FontAwesomeIcon icon={faSearch} className="nav-icon"  />
               <FontAwesomeIcon icon={faUser} className="nav-icon"  />
-              <FontAwesomeIcon icon={faCartShopping} className="nav-icon"  />
+              <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} className="nav-icon"  /></Link><p className='cart-total'>{shoppingCart.length}</p>
             </div>
 
         </div>

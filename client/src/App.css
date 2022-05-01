@@ -54,6 +54,11 @@ a:hover {
     background-color: white !important;
 }
 
+.cart-total {
+    font-size: 12px;
+    display: inline;
+}
+
 
 /* BANNER STYLING */
 
@@ -405,20 +410,39 @@ h6 {
     text-decoration: underline;
 }
 
+.cart-notice {
+    padding-top: 30px;
+}
+
+.size-notice {
+    padding-top: 20px;
+}
+
 
 /* RETURNS STYLING */
 
 .returns-container {
     padding: 50px;
-    padding-right: 200px;
-    padding-left: 200px;
+    /* padding-right: 200px; */
+    /* padding-left: 200px; */
 }
 
 form {
-    width: 50%;
     display: block;
     margin: 0 auto;
     padding-top: 30px;
+}
+
+.size-info a {
+    color: black !important;
+}
+
+.size-info a:hover {
+    color: #963226 !important;
+}
+
+input {
+    margin: 10px;
 }
 
 
@@ -426,8 +450,6 @@ form {
 
 .size-guide {
     padding: 50px;
-    padding-right: 200px;
-    padding-left: 200px;
 }
 
 .table-container {
@@ -456,6 +478,13 @@ tbody tr:nth-child(odd) {
 
 .size-info {
     text-align: center;
+}
+
+
+/* CART STYLING */
+
+.cart-container {
+    padding: 50px;
 }
 
 
