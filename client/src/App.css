@@ -244,6 +244,64 @@ h2 {
 }
 
 
+/* PRODUCTS PAGE STYLING */
+
+.products-container {
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h6 {
+    text-align: center;
+}
+
+.shoe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoe-card {
+    display: block;
+    align-items: center;
+}
+
+.shoe-list-image {
+    width: 300px;
+}
+
+.colour-button {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.colour-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.colour-icon {
+    /* margin: 5px; */
+    /* text-align: center; */
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* FOOTER STYLING */
 
 .footer-container {
@@ -251,11 +309,13 @@ h2 {
     color: white;
     padding: 50px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 12px;
 }
 
 .footer-logo {
-    width: 200px;
+    width: 120px;
     padding-bottom: 20px;
     display: block;
     margin: 0 auto;
