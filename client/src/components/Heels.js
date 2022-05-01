@@ -1,8 +1,16 @@
 import React, {useState, useEffect} from 'react';
+import { Link, useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 
-export default function Heels() {
+export default function Heels({setProduct}) {
 
     const [heels, setHeels] = useState([]);
+
+    const navigate = useNavigate();
+    const pageChange = (shoe) => {
+      navigate(`/${shoe.id}`)
+    }
 
     const getProductData = () => {
         fetch("/womens-heels.json",
@@ -27,15 +35,18 @@ export default function Heels() {
     <div className='products-container'>
         <h1>EVENING SHOES</h1>
         <h3>Women's Heels</h3>
+        <p className='filter-notice'>Filter v</p>
+        <FontAwesomeIcon icon={faFilter} className="filter-icon" size="2x"  />
+
         <div className="container">
         <div className="row">
-        {heels.map((shoe) => (
+        {heels.map((shoe, i) => (
           <div className="col" key={shoe.id}>
             <ul className='shoe-card'>
-            <li><img src={shoe.colours[0].images[0]} className="shoe-list-image" alt="Shoe for sale" /></li>
+            <li><img src={shoe.colours[0].images[0]} onClick={() => { setProduct(shoe); pageChange(shoe); }} className="shoe-list-image" alt="Shoe for sale" /></li>
             <div className='colour-container'>
-            {shoe.colours.map((colour) => (
-              <div className='colour-icon'><button style={{backgroundColor: colour.hex}} className="colour-button"></button></div>
+            {shoe.colours.map((colour, i) => (
+              <div key={i} className='colour-icon'><button style={{backgroundColor: colour.hex}} className="colour-button"></button></div>
             ))}
             </div>
             <li><h6>{shoe.product}</h6></li>

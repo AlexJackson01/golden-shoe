@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function SizeGuide() {
   return (
-    <div>
+    <div className='size-guide'>
         <h1>SIZE GUIDE</h1>
 
         <p>Our shoe sizes are stocked from sizes 3-9. See how to measure for your size below.</p>

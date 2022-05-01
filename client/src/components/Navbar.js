@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className='nav-container'>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="/home"><img src={Logo} alt="" className="nav-logo" /></a>
+          <a className="navbar-brand" href="/"><img src={Logo} alt="" className="nav-logo" /></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -17,9 +17,9 @@ export default function Navbar() {
             <a className="nav-item nav-link" href="/favourites">ABOUT</a>
             <a className="nav-item nav-link contact-link" href="/contact">CONTACT</a>
             <div className='nav-icons-container'>
-            <FontAwesomeIcon icon={faSearch} className="nav-icon" size="1.5x" />
-              <FontAwesomeIcon icon={faUser} className="nav-icon" size="1.5x" />
-              <FontAwesomeIcon icon={faCartShopping} className="nav-icon" size="1.5x" />
+            <FontAwesomeIcon icon={faSearch} className="nav-icon"  />
+              <FontAwesomeIcon icon={faUser} className="nav-icon"  />
+              <FontAwesomeIcon icon={faCartShopping} className="nav-icon"  />
             </div>
 
         </div>

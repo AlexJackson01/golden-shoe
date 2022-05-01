@@ -278,6 +278,8 @@ h6 {
 
 .shoe-list-image {
     width: 300px;
+    margin: 0 auto;
+    display: block;
 }
 
 .colour-button {
@@ -299,6 +301,108 @@ h6 {
     /* text-align: center; */
     display: block;
     margin: 0 auto;
+}
+
+.filter-icon {
+    color: #963226;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.filter-notice {
+    text-align: center;
+}
+
+.product-photo-container {
+    padding-bottom: 50px;
+}
+
+
+/* PRODUCT INFO STYLING */
+
+.product-container {
+    padding: 50px;
+}
+
+.shoe-list-altimage {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+.product-details {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.size-container {
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.red-size {
+    background-color: #963226;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px;
+}
+
+.grey-size {
+    background-color: grey;
+    color: black;
+    border: 1px solid white;
+    text-decoration: line-through;
+    padding: 10px;
+    margin: 5px;
+}
+
+.red-bag {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 50px;
+    font-size: larger;
+    border: none;
+    background-color: #963226;
+    color: white;
+}
+
+.red-bag:hover {
+    text-decoration: underline;
+}
+
+.stock-notice {
+    text-align: center;
+    color: #963226;
+    font-weight: 600;
+}
+
+.product-info {
+    padding-bottom: 50px;
+}
+
+.product-colour-button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.size-link {
+    color: black;
+    text-decoration: none;
+}
+
+.size-link:hover {
+    color: #963226;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 
@@ -331,4 +435,8 @@ li {
 
 li:hover {
     text-decoration: underline;
+}
+
+.footer-link {
+    text-decoration: none;
 }

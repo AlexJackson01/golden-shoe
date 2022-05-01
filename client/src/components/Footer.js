@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from '../images/Golden Shoe Logo.png';
+import { Link } from "react-router-dom";
+
 
 export default function Footer() {
   return (
@@ -15,7 +17,7 @@ export default function Footer() {
             <h5>Categories</h5>
             <ul>
                 <li>Sports</li>
-                <li>Evening</li>
+                <Link to="/evening" className='footer-link'><li>Evening</li></Link>
                 <li>Work</li>
                 <li>Casual</li>
                 <li>Holiday</li>
@@ -40,8 +42,8 @@ export default function Footer() {
             <ul>
                 <li>My Account</li>
                 <li>Delivery</li>
-                <li>Returns</li>
-                <li>Size Guide</li>
+                <Link to="/returns" className='footer-link'><li>Returns</li></Link>
+                <Link to="/size-guide" className='footer-link'><li>Size Guide</li></Link>
                 <li>Legal & Privacy</li>
             </ul>
         </div>
