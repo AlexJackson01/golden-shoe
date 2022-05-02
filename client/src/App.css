@@ -508,7 +508,7 @@ tbody tr:nth-child(odd) {
     background-color: #963226;
     color: white;
     border: 1px solid white;
-    margin-bottom: 200px;
+    margin-bottom: 500px;
     padding: 10px;
     margin: 5px;
     display: block;
@@ -526,7 +526,8 @@ tbody tr:nth-child(odd) {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 12px;
-    /* position: absolute;
+    /* margin-top: -100px;
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0; */
@@ -553,4 +554,8 @@ li:hover {
 
 .footer-link {
     text-decoration: none;
+}
+
+.social-icons {
+    margin: 5px;
 }

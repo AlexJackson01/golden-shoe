@@ -1,6 +1,11 @@
 import React from 'react';
 import Logo from '../images/Golden Shoe Logo.png';
 import { Link } from "react-router-dom";
+import Whatsapp from "../images/whatsapp.png";
+import Twitter from "../images/twitter.png";
+import Facebook from "../images/facebook.png";
+import Insta from "../images/instagram.png";
+
 
 
 export default function Footer() {
@@ -53,10 +58,11 @@ export default function Footer() {
             <ul>
                 <li>Customer Service</li>
                 <li>Live Chat</li>
-                <li>WhatsApp</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Twitter</li>
+                <li><img src={Whatsapp} className="social-icons" alt="Whatsapp logo" />
+            <img src={Insta} className="social-icons" alt="Instagram logo" />
+                <img src={Facebook} className="social-icons" alt="Facebook logo" />
+                <img src={Twitter} className="social-icons" alt="Twitter logo" /></li>
+
             </ul>
         </div>
     </div>
