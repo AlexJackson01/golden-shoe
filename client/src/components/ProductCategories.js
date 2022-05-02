@@ -1,10 +1,10 @@
 import React from 'react';
-import Sports from '../images/Sports.jpg';
-import Evening from '../images/Evening.jpg';
-import Work from '../images/Work.jpg';
-import Casual from '../images/Casual.jpg';
-import Holiday from '../images/Holiday.jpg';
-import Home from '../images/Home.jpg';
+import Sports from '../images/Sports.png';
+import Evening from '../images/Evening.png';
+import Work from '../images/Work.png';
+import Casual from '../images/Casual.png';
+import Holiday from '../images/Holiday.png';
+import Home from '../images/Home.png';
 import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 

@@ -487,6 +487,34 @@ tbody tr:nth-child(odd) {
     padding: 50px;
 }
 
+.cart-pic {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cart-icon {
+    display: block;
+    /* margin-right: 10px; */
+    color: #963226;
+    margin: 0 auto;
+}
+
+.cart-item {
+    font-size: 15px;
+}
+
+.checkout-button {
+    background-color: #963226;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 200px;
+    padding: 10px;
+    margin: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
 
 /* FOOTER STYLING */
 
@@ -498,6 +526,10 @@ tbody tr:nth-child(odd) {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 12px;
+    /* position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0; */
 }
 
 .footer-logo {
