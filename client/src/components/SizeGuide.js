@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+
 
 export default function SizeGuide() {
   return (
     <div className='size-guide'>
+      <Fade bottom>
         <h1>SIZE GUIDE</h1>
 
         <p className='size-info'>Our shoe sizes are stocked from sizes 3-9. See how to measure for your size below.</p>
@@ -75,7 +78,7 @@ export default function SizeGuide() {
 
     <h5>Measurement Chart</h5>
     <p className='size-info'>Using the three measurements of your feet (length, width and calf), look on our chart below to find your closest size match. For example, if you’re 229 length, 225 width and 355 calf, then the best match is a Size 4 standard fit (C).</p>
-    
+    </Fade>
     </div>
   )
 }

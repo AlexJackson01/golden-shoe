@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Fade from 'react-reveal/Fade';
+
 
 export default function Returns() {
   return (
     <div className='returns-container'>
+      <Fade bottom>
         <h1>RETURNS</h1>
 
         <h5 className='size-info'>IF YOU WOULD LIKE TO RETURN AN ITEM, PLEASE MAKE SURE TO:</h5>
@@ -44,7 +47,7 @@ The return fee for United Kingdom is free.</p><br />
   </div>
   <button type="submit" class="btn btn-secondary  ">Submit</button>
 </form>
-
+</Fade>
     </div>
   )
 }

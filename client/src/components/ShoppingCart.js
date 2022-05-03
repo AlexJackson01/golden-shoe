@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+
 
 export default function ShoppingCart({shoppingCart, setShoppingCart}) {
 
@@ -43,6 +45,7 @@ export default function ShoppingCart({shoppingCart, setShoppingCart}) {
 
   return (
     <div className='cart-container'>
+      <Fade bottom>
         <h1>SHOPPING CART</h1>
         {shoppingCart.map((item) => (
             <div className="container" key={item.id}>
@@ -64,9 +67,8 @@ export default function ShoppingCart({shoppingCart, setShoppingCart}) {
             </div>
             </div>
         ))}
-{shoppingCart.length === 0 ? <h6>Shopping cart empty!</h6> : <button className="checkout-button" >Checkout</button>
-}
-
+{shoppingCart.length === 0 ? <h6>Shopping cart empty!</h6> : <button className="checkout-button" >Checkout</button>}
+</Fade>
     </div>
   )
 }
