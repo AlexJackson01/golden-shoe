@@ -4,6 +4,7 @@ import Fade from 'react-reveal/Fade';
 import Mens from '../images/Mens.png';
 import Womens from '../images/Womens.png';
 import Unisex from '../images/Unisex.png';
+import MenDesk from '../images/Mens-desktop.png';
 
 export default function VideoBanner() {
   return (

@@ -64,8 +64,8 @@ export default function ShoppingCart({shoppingCart, setShoppingCart}) {
             </div>
             </div>
         ))}
-
-        <button className="checkout-button" >Checkout</button>
+{shoppingCart.length === 0 ? <h6>Shopping cart empty!</h6> : <button className="checkout-button" >Checkout</button>
+}
 
     </div>
   )
