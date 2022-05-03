@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -8,9 +9,6 @@ export default function ProductInfo({product, setShoppingCart}) {
     const [stock, setStock] = useState("");
     const [size, setSize] = useState("");
     const [featuredPhoto, setFeaturedPhoto] = useState(product.colours[0].images[0]);
-    const [productToBuy, setProductToBuy] = useState([
-        {product_id: product.id, url: product.photo, price: product.price, product_name: product.product, colour: product.colours[0].name, size: size}
-    ])
     const [cartNotice, setCartNotice] = useState("");
 
     const addToBag = e => {
@@ -43,6 +41,7 @@ export default function ProductInfo({product, setShoppingCart}) {
 
   return (
       <div className='product-container container'>
+        <Fade bottom>
           <div className='product-info row'>
           <h3>{product.product}</h3>
         <h3><b>{product.price}</b></h3>
@@ -118,6 +117,7 @@ export default function ProductInfo({product, setShoppingCart}) {
         ))}
 </div>
     </div>
+    </Fade>
     </div>
   )
 }

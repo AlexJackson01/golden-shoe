@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
+
 
 export default function Heels({setProduct}) {
 
@@ -33,6 +35,7 @@ export default function Heels({setProduct}) {
       
   return (
     <div className='products-container'>
+      <Fade bottom>
         <h1>EVENING SHOES</h1>
         <h3>Women's Heels</h3>
         <p className='filter-notice'>Filter v</p>
@@ -56,7 +59,7 @@ export default function Heels({setProduct}) {
         ))}
         </div>
         </div>
-
+        </Fade>
     </div>
   )
 }

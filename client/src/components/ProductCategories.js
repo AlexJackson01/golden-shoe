@@ -13,6 +13,7 @@ import Fade from 'react-reveal/Fade';
 export default function ProductCategories() {
   return (
     <div className='shoe-categories'>
+      <Fade bottom>
         <h2>SHOES FOR ANY OCCASION</h2>
         <div className='categories'>
           <div><img src={Sports} className="category-image" alt="Sports category" /><p className='category-item'>Sports</p></div>
@@ -23,6 +24,7 @@ export default function ProductCategories() {
           <div><img src={Home} className="category-image" alt="Home category" /><p className='category-item'>Home</p></div>
 
     </div>
+    </Fade>
     </div>
   )
 }
