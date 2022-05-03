@@ -46,7 +46,7 @@ export default function Heels({setProduct}) {
             <li><img src={shoe.colours[0].images[0]} onClick={() => { setProduct(shoe); pageChange(shoe); }} className="shoe-list-image" alt="Shoe for sale" /></li>
             <div className='colour-container'>
             {shoe.colours.map((colour, i) => (
-              <div key={i} className='colour-icon'><button style={{backgroundColor: colour.hex}} className="colour-button"></button></div>
+              <div>{colour.inStock ? <div><button style={{backgroundColor: colour.hex}} className="colour-button"></button></div> : <div key={i} className='colour-icon'><button style={{backgroundColor: colour.hex, color: 'red', fontSize: '25px', fontWeight: 'bold' }} disabled={true} className="colour-button">X</button></div>}</div>
             ))}
             </div>
             <li><h6>{shoe.product}</h6></li>

@@ -69,7 +69,7 @@ export default function ProductInfo({product, setShoppingCart}) {
         <div className='colour-container'>
             <h6>Available colours:</h6>
             {product.colours.map((colour, i) => (
-              <div key={i} className='colour-icon'><button style={{backgroundColor: colour.hex}} className="product-colour-button"></button></div>
+              <div>{colour.inStock ? <div><button style={{backgroundColor: colour.hex}} className="product-colour-button"></button></div> : <div key={i} className='colour-icon'><button style={{backgroundColor: colour.hex, color: 'red', fontSize: '35px', fontWeight: 'bold' }} disabled={true} className="product-colour-button">X</button></div>}</div>
             ))}
         </div>
         
